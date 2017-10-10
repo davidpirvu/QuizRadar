@@ -6,7 +6,13 @@ header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
 header("Access-Control-Allow-Headers: Origin");
 header('P3P: CP="CAO PSA OUR"'); // Makes IE to support cookies
 
-$sql = "SELECT * FROM quiztable";
+$category = "math";
+
+if(isset($_GET["category"])) {
+    $category = $_GET["category"];
+}
+
+$sql = "SELECT * FROM quiztable WHERE category = '$category' ORDER BY RAND() LIMIT 10";
 $result = $conn->query($sql);  // cer rezultatele facand query din $sql pe conn(xiune). Stochez in result.
 
 $quiz = array();                // creez un json in care voi pune datele

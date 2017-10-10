@@ -1,8 +1,7 @@
-var pos = 0, test, test_status,
+var pos = 0, test,
+    test_status,
     questions = [],
     choice, choices,
-    firstChoice, secondChoice,
-    thirdChoice,
     correct = 0;
 
 function renderQuestion(){
@@ -15,14 +14,17 @@ function renderQuestion(){
         return false;
     }
 
-    var question = questions[pos].question;
-    firstChoice = questions[pos].answers[1];
-    secondChoice = questions[pos].answers[2];
-    thirdChoice = questions[pos].answers[3];
+    var q = questions[pos];
+    var question = q.question;
+
     test.innerHTML = "<h3>" + question + "</h3>";
-    test.innerHTML += "<input type='radio' name='choices' value='A'> " + firstChoice + "<br>";
-    test.innerHTML += "<input type='radio' name='choices' value='B'> " + secondChoice + "<br>";
-    test.innerHTML += "<input type='radio' name='choices' value='C'> " + thirdChoice + "<br><br>";
+
+    q.answers.forEach(function(ans, index) {
+        test.innerHTML += "<input type='radio' name='choices' value='" + index + "'> " + ans + "<br>";
+    });
+
+    test.innerHTML += "<br>";
+
     test.innerHTML += "<button onclick='checkAnswer()'>Raspunde</button>";
 }
 
@@ -46,9 +48,14 @@ function reload() {
 document.getElementById('button').onclick= reload;
 
 // $.ajax('./intrebari.json').done(function (response) {
-$.ajax('./date/list-db.php').done(function (response) {
+$.ajax('./date/list-db.php', {
+    dataType: 'json',
+    data: {
+        category: category
+    }
+}).done(function (response) {
     questions = response;
-    console.warn('response; ', JSON.parse(response))
-    // window.addEventListener("load", renderQuestion, false);
+    // questions = JSON.parse(response);
+    console.warn('response; ', response);
     renderQuestion();
 });
