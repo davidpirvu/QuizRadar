@@ -12,7 +12,7 @@ if(isset($_GET["category"])) {
     $category = $_GET["category"];
 }
 
-$sql = "SELECT * FROM quiztable WHERE category = '$category' ORDER BY RAND() LIMIT 10";
+$sql = "SELECT * FROM quiztable WHERE category = '$category' ORDER BY RAND() LIMIT 10";  // selectare pe categorie, cu limitare la 10 intrebari
 $result = $conn->query($sql);  // cer rezultatele facand query din $sql pe conn(xiune). Stochez in result.
 
 $quiz = array();                // creez un json in care voi pune datele
