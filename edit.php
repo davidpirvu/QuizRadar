@@ -1,3 +1,10 @@
+<?php
+$pin = isset ($_POST["pin"])?$_POST["pin"]:"";
+if($pin!="4123"){
+    header('Location: ./index.php');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

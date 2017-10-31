@@ -9,23 +9,22 @@ body{
     padding-left: 150px;
     font-family: "Monotype Corsiva";
     font-size: 30px;
+    margin-top: 100px;
 
 }
 
-#container {
+#container    {
     width: 500px;
     height: 500px;
-    margin:0px;
+    margin: 0px;
     border: 0px;
     color: red;
     margin: auto;
-    background-color: black;
+    background-color: #101a29;
     position: relative;
     top: 50px;
-
-
-
-
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px white;
 }
 
 #test {
@@ -48,4 +47,36 @@ body{
     position: absolute;
     top: 440px;
     left: 200px;
+}
+
+.menu {
+    list-style-type: none;
+    width: 396px;
+    padding: 0px;
+    margin: auto;
+}
+
+.menu li {
+    width: 120px;
+    height: 40px;
+    margin:0px 4px;
+    border: 2px solid black;
+    border-radius: 5px;
+    positon: absolute;
+    float: left;
+    background-color: yellow;
+}
+
+.menu :hover{
+    background-color: white;
+    border-radius: 5px;
+}
+
+.menu a {
+    display: block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    text-align: center;
 }
