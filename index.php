@@ -39,5 +39,6 @@
 
 <script src="js/lib/jquery/jquery-2.1.3.js"></script>
 <script src="app.js"></script>
+.
 </body>
 </html>
