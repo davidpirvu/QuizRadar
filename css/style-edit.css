@@ -1,0 +1,45 @@
+
+/*edit.php*/
+
+body {
+    background: -webkit-linear-gradient( right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("../date/old_1920.jpg") no-repeat;
+    font-family: Verdana;
+}
+
+#question-form {
+    margin-top: 5px;
+    width: 100%;
+    font-family: Verdana;
+}
+
+#question-form input {
+    width: 23.4%;
+    border: 1px solid #265385;
+}
+
+#question-form .save {
+    display: none;
+}
+
+#question-list {
+    border-collapse: collapse;
+    margin:5px 0 5px 0;
+    width: 100%;
+    font-size: .85em;
+    color: #ffffff;;
+}
+
+#question-list td{
+    width: 24%;
+}
+
+#question-list, #question-list td, #question-list th {
+    border: 1px solid #265385;
+}
+#question-list td, #question-list th {
+    padding: 5px;
+    text-align: left;
+}
+#question-list th{
+    font-weight: bold;
+}

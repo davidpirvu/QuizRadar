@@ -7,7 +7,7 @@ var pos = 0, test,
 function renderQuestion(){
     test = document.getElementById('test');
     if(pos >= questions.length){
-        test.innerHTML = "<h2>Ai raspuns corect la " + correct + " din " + questions.length + " intrebari </h2>";
+        test.innerHTML = "<h3>Ai raspuns corect la " + correct + " din " + questions.length + " intrebari </h3>";
         document.getElementById("test_status").innerHTML = "Sfarsitul Testului";
         pos = 0;
         correct = 0;
@@ -47,7 +47,6 @@ function reload() {
 }
 document.getElementById('button').onclick= reload;
 
-// $.ajax('./intrebari.json').done(function (response) {
 $.ajax('./date/list-db.php', {
     dataType: 'json',
     data: {

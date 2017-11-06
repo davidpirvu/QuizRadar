@@ -1,14 +1,15 @@
-body{
-    background-image: url("spy.jpg");
 
+
+body{
+    background: -webkit-linear-gradient( right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("../date/spy.jpg") no-repeat;
+    font-family: Verdana;
 }
 
 #titlu{
     color: red;
     position: absolute;
-    padding-left: 150px;
-    font-family: "Monotype Corsiva";
-    font-size: 30px;
+    padding-left: 110px;
+    font-size: 1.5em;
     margin-top: 100px;
 
 }
@@ -28,12 +29,12 @@ body{
 }
 
 #test {
-    width: 200px;
-    border: red 3px solid;
+    width: 410px;
+    border: red 2px solid;
     position: absolute;
     top: 180px;
-    left:85px;
-    padding: 10px 40px 40px 40px;
+    left: 25px;
+    padding: 0px 20px 20px 20px;
 
 }
 
@@ -60,15 +61,17 @@ body{
     width: 120px;
     height: 40px;
     margin:0px 4px;
-    border: 2px solid black;
+    border: 2px solid;
     border-radius: 5px;
+    border-color: #265385;
     positon: absolute;
     float: left;
-    background-color: yellow;
+    background-color: #101a29;
+    font-size: 1.2em
 }
 
 .menu :hover{
-    background-color: white;
+    background-color: #265385;
     border-radius: 5px;
 }
 
@@ -79,4 +82,8 @@ body{
     line-height: 40px;
     text-decoration: none;
     text-align: center;
+}
+#login {
+    margin-top: 80px;
+    margin-left: 40%;
 }

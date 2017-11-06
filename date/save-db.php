@@ -20,4 +20,3 @@ $conn->close();         // inchid conexiunea
 
 header('Location: ../edit.php');  // mergi inapoi la aceasta adresa
 ?>
-?>
