@@ -22,7 +22,7 @@ TODO
 Live Project
 ----
 
-Live project on Rawgit(DB) is here [https://rawgit.com/davidpirvu/QuizRadar2/master/demo.html](https://rawgit.com/davidpirvu/QuizRadar2/master/demo.html)
+Live project on Rawgit(DB) is here [https://rawgit.com/davidpirvu/QuizRadar2/master/demo.html?action=demo](https://rawgit.com/davidpirvu/QuizRadar2/master/demo.html?action=demo)
  
 Live project with DB is here [https://quizradar.000webhostapp.com/](https://quizradar.000webhostapp.com/) 
  

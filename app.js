@@ -47,7 +47,12 @@ function reload() {
 }
 document.getElementById('button').onclick= reload;
 
-$.ajax('./date/list-db.php', {
+var loadUrl = './date/list-db.php';
+if(window.location.search.indexOf('action=demo') !== -1) {
+   loadUrl = 'date/question.json';
+}
+
+$.ajax(loadUrl, {
     dataType: 'json',
     data: {
         category: category

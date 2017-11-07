@@ -1,0 +1,52 @@
+[
+  {
+    "id": "17",
+    "question": "Care simbol este folosit ca o scurtatura pentru jQuery",
+    "correct": "1",
+    "answers": [
+      "simbolul ?",
+      "simbolul $",
+      "simbolul %"
+    ]
+  },
+  {
+    "id": "11",
+    "question": "JSON este:",
+    "correct": "1",
+    "answers": [
+      "librarie",
+      "obiect",
+      "framework"
+    ]
+  },
+  {
+    "id": "15",
+    "question": "Cum se creaza o functie in JavaScript?",
+    "correct": "1",
+    "answers": [
+      "function:myFunction()",
+      "function = myFunction()",
+      "function myFunction()"
+    ]
+  },
+  {
+    "id": "16",
+    "question": "In SQL, cum se selecteaza coloana \"Prenume\" din tabelul numit \"Agenda\" ?",
+    "correct": "1",
+    "answers": [
+      "SELECT Agenda.Prenume",
+      "SELECT Prenume FROM Agenda",
+      "MARK Prenume FROM Agenda"
+    ]
+  },
+  {
+    "id": "10",
+    "question": "Care sintaxa CSS este corecta?",
+    "correct": "0",
+    "answers": [
+      "body {color:blue;}",
+      "{body:color=blue;}",
+      "body:color=blue;"
+    ]
+  }
+]
