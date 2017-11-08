@@ -14,15 +14,13 @@ Jobs done
 - add/edit/remove questions via pin secured page
 - questions can be modified in a separate html page, secured with pin
 
-TODO 
------
-
-- load the project with DB on a server.
 
 Live Project
 ----
 
-Live project on Rawgit(DB) is here [https://rawgit.com/davidpirvu/QuizRadar2/master/demo.html?action=demo](https://rawgit.com/davidpirvu/QuizRadar2/master/demo.html?action=demo)
+Live project with DB is here [http://quizradar.tk/](http://quizradar.tk/) 
+
+Live project on Rawgit(without DB) is here [https://rawgit.com/davidpirvu/QuizRadar2/master/demo.html?action=demo](https://rawgit.com/davidpirvu/QuizRadar2/master/demo.html?action=demo)
  
-Live project with DB is here [https://quizradar.000webhostapp.com/](https://quizradar.000webhostapp.com/) 
+
  
